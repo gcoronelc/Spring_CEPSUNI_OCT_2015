@@ -7,20 +7,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Prueba {
 
-  public static void main(String[] args) {
-    
-    String xmlFile = "/pe/egcc/cepsuni/caso01/contexto.xml";
-    
-    //ApplicationContext  beanFactory;
-    //beanFactory = new ClassPathXmlApplicationContext(xmlFile);
-    
-    BeanFactory beanFactory;
-    beanFactory = new ClassPathXmlApplicationContext(xmlFile);
-    
-    Matematica bean;
-    bean = beanFactory.getBean("panchito", Matematica.class);
-    
-    System.out.println("Suma = " + bean.sumar(5, 8));
+	public static void main(String[] args) {
 
-  }
+		String xmlFile = "/pe/egcc/cepsuni/caso01/contexto.xml";
+
+		ConfigurableApplicationContext context;
+		// context = new ClassPathXmlApplicationContext(new String[] {xmlFile});
+		context = new ClassPathXmlApplicationContext(xmlFile);
+
+		Matematica bean;
+		bean = context.getBean("panchito", Matematica.class);
+
+		System.out.println("Suma = " + bean.sumar(5, 8));
+
+		context.close();
+
+	}
 }

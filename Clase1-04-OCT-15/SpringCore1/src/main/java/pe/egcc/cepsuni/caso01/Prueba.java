@@ -26,5 +26,7 @@ public class Prueba {
     bean = beanFactory.getBean("mate", Matematica.class);
     System.out.println("Suma = " + bean.sumar(10, 10));
     
+
+    
   }
 }
