@@ -1,0 +1,35 @@
+Ejercicio 1:
+------------
+
+Desarrollar una aplicación que permita encontrar la nota promedio
+de un estudiante de Java.
+
+Se debe ingresar el nombre del estudiante y cuatro notas.
+
+Se promedia las tres mejores notas.
+
+Se debe implementar las siguientes validaciones utilizando Spring Validator:
+
+  - El nombre del estudiante de tener como minimo 5 caracteres.
+  - Las notas debes estar en el rango de 0 a 20: [0,20].
+
+
+Ejercicio 2:
+------------
+
+Desarrollar una aplicación utilizando spring MVC que permita
+encontrar el importe de una venta, los datos de entrada son:
+
+  - Nombre del producto
+  - Precio de venta
+  - Cantidad
+
+El cliente tiene un descuento de 5% si el importe de la
+venta es mayor o igual a 1000.00 Nuevos soles.
+
+Se debe implementar las siguientes validaciones utilizando Spring Validator:
+
+  - El nombre del producto debe tener como minimo 5 caracteres.
+  - El precio de venta debe ser mayor que cero. 
+  - El precio de venta puede ser cero cuando se trata de una donación.
+  - La cantidad debe ser mayor que cero
